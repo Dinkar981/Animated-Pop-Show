@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Pop-up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+    <button  onclick="togglePopup()" id="openbtn">Subscribe</button>
+    <div class="popup">
+        <i class="material-icons">check_circle</i>
+        <h2>Success !</h2>
+        <p>Congrtulation you have successfully Subscribed</p>
+        <button onclick="togglePopup()" id="openbtn"></button>
+        <button onclick="togglePopup()">OK</button>
+    </div>
+
+    <script>
+        let popup = document.querySelector('.popup')
+
+        function togglePopup (){
+            popup.classList.toggle('show')
+        }
+    </script>
+    
+</body>
+</html>
